@@ -1,0 +1,12 @@
+#ifndef BOXFILTER_GLOBAL_H
+#define BOXFILTER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(BOXFILTER_LIBRARY)
+#  define BOXFILTERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define BOXFILTERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // BOXFILTER_GLOBAL_H
